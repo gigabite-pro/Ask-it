@@ -1,0 +1,132 @@
+*{
+  scroll-behavior: smooth;
+}
+
+nav{
+  background-color: rgba(0, 0, 0, 0.678);
+  display: inline-block;
+  height: 6rem;
+}
+
+.nav-align{
+  margin-left: auto;
+  margin-right: 15rem;
+}
+
+ul li a{
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition-duration: 0.3s;
+}
+
+.brand{
+  margin-left: 13rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+ul li{
+  margin: 0.3rem;
+  padding: 5px;
+}
+
+ul li a:hover{
+  color: black;
+}
+
+#separator:hover{
+  color: white;
+  cursor: default;
+}
+
+.pic{
+  width: 100%;
+  height: 35rem;
+  background-image: linear-gradient(
+    45deg,
+   #422ac9,
+   #2449ad,
+   #3077d4,
+   #126392,
+   #047269,
+   #17968b,
+   #54cdd1,
+   #71f993,
+   #20912a,
+  );
+  background-size: 400%;
+  animation: bg-animation 30s infinite alternate;
+}
+
+@keyframes bg-animation{
+  0% {background-position: left;}
+  100%{background-position: right;}
+}
+
+.main_head{
+  font-size: 80px;
+  margin-top: 14rem;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+.typewrite{
+  color: white;
+}
+
+.btn{
+  border-radius: 20px;
+  width: 15rem;
+  letter-spacing: 2px;
+}
+
+h1{
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.about_head{
+  color: teal;
+  font-size: 2rem;
+  margin-top: -3rem;
+}
+
+.about_content{
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  color: black;
+}
+
+#about{
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+.logo{
+  margin-top: 7rem;
+}
+
+.contact_head{
+  color: #0F9D58;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.icon{
+  color: white;
+}
+
+.contact_text{
+  color: white;
+}
+
+.contact{
+  height: 24rem;
+}
