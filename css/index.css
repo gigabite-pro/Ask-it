@@ -149,6 +149,7 @@ h1 {
 }
 
 .contact {
+  margin-top: 7rem;
   background-color: #dc3545;
 }
 
@@ -156,4 +157,5 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
