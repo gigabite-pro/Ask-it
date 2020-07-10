@@ -135,10 +135,9 @@ h1 {
 }
 
 .contact_head {
-  color: #0F9D58;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  font-size: 40px;
+  color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 .icon {
@@ -150,6 +149,11 @@ h1 {
 }
 
 .contact {
-  height: 24rem;
+  background-color: #dc3545;
 }
-/*# sourceMappingURL=index.css.map */
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
