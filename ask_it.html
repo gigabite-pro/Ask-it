@@ -1,0 +1,249 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/notifyreLogo2.png">
+    <link rel="stylesheet" href="ask it.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+    <title>Ask-it | Question</title>
+  </head>
+  <body>
+
+  <script>
+    var preload = document.createElement("div");
+    preload.className = "preloader";
+    preload.innerHTML =
+      '<p class="hello"></p><div id="preloader"><div id="loader"></div></div>';
+    document.body.appendChild(preload);
+    window.addEventListener("load", function() {
+      preload.className += " fade";
+      setTimeout(function() {
+        preload.style.display = "none";
+      }, 5000);
+    });
+  </script>
+
+  <style>
+    .preloader {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(45deg, #422ac9, #2449ad, #3077d4, #126392, #047269, #17968b, #54cdd1, #71f993, #20912a);
+      position: fixed;
+      left: 0;
+      background-size: 400%;
+      top: 0;
+      z-index: 10000;
+      perspective: 1600px;
+      perspective-origin: 20% 50%;
+      transition: 0.5s all;
+      opacity: 1;
+      animation: bg-animation 30s infinite alternate;
+    }
+
+    @-webkit-keyframes bg-animation {
+      0% {
+        background-position: left;
+      }
+
+      100% {
+        background-position: right;
+      }
+    }
+
+    @keyframes bg-animation {
+      0% {
+        background-position: left;
+      }
+
+      100% {
+        background-position: right;
+      }
+    }
+
+    .hello {
+      width: 300px;
+      height: 80px;
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      left: 2%;
+      right: 0;
+      margin: 5px auto;
+      font-family: monospace;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #loader {
+      display: block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: white;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: white;
+      -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+    }
+
+    #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: white;
+      -webkit-animation: spin 1.5s linear infinite;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .preloader.fade {
+      transition: 2.5s;
+      opacity: 0;
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .form-content {
+      background-color: white;
+      border-radius: 10px;
+      width: 35rem;
+      position: absolute;
+      padding: 30px;
+      top: 10vh;
+      box-shadow: 0px 0px 10px 0px black;
+    }
+
+    body {
+      background: #17968b;
+    }
+
+    @media(max-width: 576px) {
+      .form-content {
+        width: 94%;
+        margin: -0.25rem;
+        top: 5vh;
+      }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-5">
+        <div class="form-content ">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Question</label>
+              <input type="question" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Characters Allowed</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Restricted Words</label>
+              <textarea class="form-control" placeholder="Type the words you want to filter separated by a “,” (comma)
+" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <div>
+                <button type="submit" class="btn btn-danger">Generate</button>
+              </div>
+            </div>
+        </div>
+        </form>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/notifyreLogo2.png">
+  <link rel="stylesheet" href="css/admin_area.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/preloader.js"></script>
+  <title>Ask-it | Admin Area</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md" id="nav">
+    <a href="index.html" class="brand"><img src="assets/notifyreLogo2.png" alt="logo" height="60px" width="60px"></a>
+    <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target=".menu">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav menu">
+      <ul class="navbar-nav nav-align">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#responses" class="nav-link">Responses</a></li>
+        <li class="nav-item"><a href="#wordcloud" class="nav-link">Wordcloud</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container responses shadow-lg" id="responses">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mt-4">
+        <h1 class="responses_head">Responses</h1>
+      </div>
+      <div class="col-12 text-center">
+        <h4 class="responses_content">You currently have <span>5</span> responses.</h4>
+      </div>
+      <div class="col-12 col-md-4 text-center mt-3">
+        <button class="btn btn-success">Refresh</button>
+      </div>
+      <div class="col-12 text-center">
+        <h4 class="responses_content">Download the answer list here.</h4>
+      </div>
+      <div class="col-12 col-md-4 text-center mt-3 mb-3">
+        <button class="btn btn-info">Download Answers</button>
+      </div>
+    </div>
+  </div>
+  <div class="container wordcloud shadow-lg mt-5" id="wordcloud">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mt-4">
+        <h1 class="responses_head">Wordcloud</h1>
+      </div>
+      <div class="col-12 text-center">
+        <h4 class="responses_content">Click here to generate the wordcloud for all the answers.</h4>
+      </div>
+      <div class="col-12 col-md-4 text-center mt-3 mb-3">
+        <button class="btn btn-dark">Generate</button>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 text-center mt-2 mb-4 thumbnail">
+        <img src="assets/wordcloud.png" alt="wordcloud thumbnail" class="img-thumbnail">
+        <div class="overlay">
+          <div class="text"><a href="#" data-toggle="modal" data-target="#wordcloud">Click here to see image.</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-7">
+        <div class="modal fade" id="wordcloud" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Wordcloud Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <div class="col-12">
+                   <img src="assets/wordcloud.png" alt="wordcloud image" class="img-fluid">
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h4 class="responses_content">Get the wordcloud directly on your mail.</h4>
+      </div>
+      <div class="col-12 col-md-4 text-center mt-3 mb-3">
+        <button class="btn btn-primary">Mail Wordcloud</button>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 text-center">
+        <button class="btn btn-danger mt-3 mb-5">End Meeting</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <small>Developed by Vaibhav Sharma • Anshul Saha • Yuvraaj Narula • Aditya Aggarwal</small>
+  </footer>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/to-top.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
