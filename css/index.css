@@ -1,5 +1,7 @@
 * {
   scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav {
@@ -92,7 +94,7 @@ ul li a:hover{
 }
 
 .main_head {
-  font-size: 80px;
+  font-size: 5rem;
   margin-top: 14rem;
   font-family: 'Lato', sans-serif;
   text-decoration: none;
@@ -122,6 +124,7 @@ h1 {
 
 .card{
   height: 24rem;
+  border-radius: 15px;
 }
 
 .about_content {
@@ -132,6 +135,10 @@ h1 {
 
 .logo {
   margin-top: 7rem;
+}
+
+.end-features{
+  margin-top: 3rem;
 }
 
 .contact_head {
@@ -189,4 +196,36 @@ footer{
   pointer-events: auto;
   opacity:1;
   text-decoration: none;
+}
+
+@media(max-width: 576px){
+  .brand{
+    margin-left: 0px;
+  }
+
+  nav{
+    height: fit-content;
+  }
+
+  .nav-align{
+    margin-left: 0px;
+  }
+
+  .main_head{
+    font-size: 3rem;
+  }
+
+  .card{
+    margin-top: 3rem;
+  }
+
+  .end-features{
+    margin-top: 0rem;
+  }
+}
+
+@media(max-width: 400px){
+  .main_head{
+    font-size: 2.5rem;
+  }
 }
