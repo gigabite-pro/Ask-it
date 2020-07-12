@@ -141,26 +141,6 @@ ul li a:hover{
   width: 15rem;
 }
 
-
-.contact_head {
-  font-size: 40px;
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
-
-.icon {
-  color: white;
-}
-
-.contact_text {
-  color: white;
-}
-
-.contact {
-  margin-top: 3rem;
-  background-color: #dc3545;
-}
-
 footer{
   background-color: black;
   color: white;
