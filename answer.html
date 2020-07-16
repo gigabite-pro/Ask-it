@@ -51,8 +51,8 @@
       </div>
       <div class="col-12 mb-2">
         <form action="">
-          <input type="text" class="form-control" placeholder="Your answer..">
-          <p class="mt-2">*Maximum characters allowed: <span>5</span></p>
+          <input class="form-control" id="my-textarea" placeholder="Your answer.." maxlength="100">
+          <strong><p class="mt-2" id="my-textarea-remain">100 characters remaining</p></strong>
           <div class="form-group">
             <button class="btn btn-success">Submit</button>
           </div>
@@ -70,6 +70,7 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/to-top.js"></script>
+  <script src="js/characters.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
