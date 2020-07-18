@@ -120,6 +120,11 @@ h1 {
 
 .card-img-top{
   border-radius: 0px 0px 15px 15px;
+  max-height: 14rem;
+}
+
+.navbar-toggler-icon{
+  color: white;
 }
 
 .about_content {
